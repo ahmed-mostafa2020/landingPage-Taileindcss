@@ -1,2 +1,2 @@
 # landingPage-Taileindcss
-Landing Page - TAilwindCss
+Landing Page - TailwindCss
