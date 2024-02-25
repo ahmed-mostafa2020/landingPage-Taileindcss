@@ -13,19 +13,21 @@ const Header = (props: Props) => {
 
   const headerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const header = headerRef.current;
-      if (header) {
-        if (window.scrollY > 100) {
-          header.style.background = "#0c1524";
-          header.style.padding = "20px 0";
-        } else {
-          headerRef.current.style.background = "transparent";
-          headerRef.current.style.padding = "60px 0";
-        }
+  const handleScroll = () => {
+    const header = headerRef.current;
+    if (header) {
+      if (window.scrollY > 100) {
+        header.style.background = "#0c1524";
+        header.style.padding = "20px 0";
+      } else {
+        headerRef.current.style.background = "transparent";
+        headerRef.current.style.padding = "60px 0";
       }
-    });
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
   }, []);
 
   return (
