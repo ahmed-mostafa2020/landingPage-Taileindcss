@@ -16,7 +16,7 @@ const Header = (props: Props) => {
   const handleScroll = () => {
     const header = headerRef.current;
     if (header) {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 80) {
         header.style.background = "#0c1524";
         header.style.padding = "20px 0";
       } else {
