@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+  .container {
+    @apply mx-auto;
+  }
+
+  .element-center {
+    @apply flex justify-center items-center;
+  }
+
+  .btn {
+    @apply element-center bg-btnColor hover:bg-btnColorHover;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

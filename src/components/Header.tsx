@@ -33,25 +33,27 @@ const Header = (props: Props) => {
   return (
     <header
       ref={headerRef}
-      className="sticky top-0 left-0 transition-all duration-300 ease-linear"
+      className="fixed z-50 w-full top-0 left-0 transition-all duration-300 ease-linear"
     >
-      <div className="container flex justify-center items-center flex-col gap-5 mx-auto sm:flex-row sm:justify-between">
+      <div className="container element-center flex-col gap-5 mx-auto sm:flex-row sm:justify-between">
         <Link href="./">
           <Image src={logo} alt="logo" />
         </Link>
 
-        <ul className="flex gap-10">
-          {links.map((link) => (
-            <li key={link}>
-              <Link
-                className="text-white opacity-90 hover:opacity-100 hover:underline capitalize transition-all duration-300 ease-in-out"
-                href={`./${link}`}
-              >
-                {link}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <nav>
+          <ul className="flex gap-10">
+            {links.map((link) => (
+              <li key={link}>
+                <Link
+                  className="text-mainColor opacity-90 hover:opacity-100 hover:underline capitalize transition-all duration-300 ease-in-out"
+                  href={`./${link}`}
+                >
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </header>
   );
