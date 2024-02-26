@@ -63,9 +63,9 @@ const Footer = () => {
             ))}
           </div>
 
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-[20px] w-fit">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
             {links.map((item) => (
-              <li className="w-fit" key={item}>
+              <li key={item}>
                 <Link
                   href={item.toLowerCase()}
                   className=" hover:text-hoverColor transition-all duration-200"
@@ -76,9 +76,9 @@ const Footer = () => {
             ))}
           </ul>
 
-          <ul className="flex gap-7 h-fit">
+          <ul className="flex gap-7">
             {socialIcons.map((item) => (
-              <li className="h-fit" key={item.social}>
+              <li key={item.social}>
                 <Link
                   className="flex items-center p-2 text-[20px]  border-mainColor border-[1px] border-solid hover:text-hoverColor hover:border-hoverColor rounded-full transition-all duration-300 ease-in-out"
                   href={`https://${item.social}.com/`}
