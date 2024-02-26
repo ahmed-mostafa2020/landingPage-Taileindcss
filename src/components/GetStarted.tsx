@@ -11,8 +11,8 @@ const GetStarted = () => {
             tempore? Vero adipisci eveniet voluptatibus cupiditate!
           </p>
           <form
-            className="mt-3 flex flex-wrap md:flex-nowrap justify-between gap-5"
-            action=""
+            className="mt-3 flex flex-wrap md:flex-nowrap justify-between gap-7"
+            action="#"
           >
             <input
               className="text-black w-full md:w-[450px] py-[10px] px-[20px] rounded-[50px] outline-none focus:shadow-[0px_3px_10px_5px_#9e9e9e29] transition-all duration-300"
@@ -20,7 +20,7 @@ const GetStarted = () => {
               placeholder="email@example.com"
             />
             <button
-              className="bg-secColor font-semibold btn  hover:bg-hoverColor  w-full md:w-[200px] h-[50px] capitalize transition-all duration-300"
+              className="bg-secColor font-semibold btn  hover:bg-hoverColor w-full md:w-[200px] h-[50px] capitalize transition-all duration-300"
               type="submit"
             >
               Get started for free
