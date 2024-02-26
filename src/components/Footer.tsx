@@ -36,7 +36,7 @@ const Footer = () => {
     <footer className="space pt-[200px] bg-[#0c1524] text-mainColor">
       <div className="container">
         <Link className="block mb-8" href="./">
-          <Image src={logo} alt="logo" />
+          <Image className="mt-[1px]" src={logo} alt="logo" />
         </Link>
 
         <div className="flex justify-between flex-wrap flex-col md:flex-row gap-[30px]">
