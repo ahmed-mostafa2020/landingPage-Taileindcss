@@ -5,6 +5,8 @@ import logo from "../../public/assets/images/logo.svg";
 import phone from "../../public/assets/images/icon-phone.svg";
 import location from "../../public/assets/images/icon-location.svg";
 import email from "../../public/assets/images/icon-email.svg";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+
 import Link from "next/link";
 import { useState } from "react";
 
@@ -25,9 +27,9 @@ const Footer = () => {
   ]);
 
   const [socialIcons, setSocialIcons] = useState([
-    "facebook",
-    "twitter",
-    "instagram",
+    { social: "facebook", icon: <FaFacebookF /> },
+    { social: "twitter", icon: <FaTwitter /> },
+    { social: "instagram", icon: <FaInstagram /> },
   ]);
 
   return (
@@ -37,11 +39,11 @@ const Footer = () => {
           <Image src={logo} alt="logo" />
         </Link>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
+        <div className="flex justify-between flex-wrap flex-col md:flex-row gap-[30px]">
           <div className="flex gap-4 items-start">
             <Image src={location} alt="location-img" />
 
-            <p className="text-sm tracking-wider break-words">
+            <p className="text-sm tracking-wider break-words w-[340px] max-w-full">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
               nisi dignissimos unde ipsam modi facilis nam magni, assumenda ad
               fuga.
@@ -61,9 +63,9 @@ const Footer = () => {
             ))}
           </div>
 
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-[10px]">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-[20px] w-fit">
             {links.map((item) => (
-              <li key={item}>
+              <li className="w-fit" key={item}>
                 <Link
                   href={item.toLowerCase()}
                   className=" hover:text-hoverColor transition-all duration-200"
@@ -74,7 +76,19 @@ const Footer = () => {
             ))}
           </ul>
 
-          <div></div>
+          <ul className="flex gap-7 h-fit">
+            {socialIcons.map((item) => (
+              <li className="h-fit" key={item.social}>
+                <Link
+                  className="flex items-center p-2 text-[20px]  border-mainColor border-[1px] border-solid hover:text-hoverColor hover:border-hoverColor rounded-full transition-all duration-300 ease-in-out"
+                  href={`https://${item.social}.com/`}
+                  target="_blank"
+                >
+                  {item.icon}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>
