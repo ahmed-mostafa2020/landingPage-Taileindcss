@@ -5,6 +5,7 @@ import Features from "@/src/components/Features";
 import StayProductive from "@/src/components/StayProductive";
 import Testimonials from "@/src/components/Testimonials";
 import GetStarted from "@/src/components/GetStarted";
+import Footer from "@/src/components/Footer";
 
 type Props = {};
 
@@ -17,6 +18,7 @@ const Home = (props: Props) => {
       <StayProductive />
       <Testimonials />
       <GetStarted />
+      <Footer />
     </>
   );
 };
