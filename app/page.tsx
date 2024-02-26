@@ -3,6 +3,7 @@ import "./globals.css";
 import Landing from "@/src/components/Landing";
 import Features from "@/src/components/Features";
 import StayProductive from "@/src/components/StayProductive";
+import Testimonials from "@/src/components/Testimonials";
 
 type Props = {};
 
@@ -13,6 +14,7 @@ const Home = (props: Props) => {
       <Landing />
       <Features />
       <StayProductive />
+      <Testimonials />
     </>
   );
 };

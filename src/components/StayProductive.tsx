@@ -3,9 +3,7 @@ import image from "../../public/assets/images/illustration-stay-productive.png";
 import ArrowImg from "../../public/assets/images/icon-arrow.svg";
 import Link from "next/link";
 
-type Props = {};
-
-const StayProductive = (props: Props) => {
+const StayProductive = () => {
   return (
     <section className="py-[100px]">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
