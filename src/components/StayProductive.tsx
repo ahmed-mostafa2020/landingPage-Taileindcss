@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const StayProductive = () => {
   return (
-    <section className="py-[100px]">
+    <section className="space">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
         <figure>
           <Image src={image} alt="stay-productive-img" />

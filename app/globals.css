@@ -14,6 +14,10 @@
   .btn {
     @apply element-center bg-secColor hover:bg-hoverColor;
   }
+
+  .space {
+    @apply pb-[80px];
+  }
 }
 
 :root {

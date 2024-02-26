@@ -31,7 +31,7 @@ const Features = () => {
     },
   ]);
   return (
-    <section>
+    <section className="space">
       <div className="container element-center gap-y-10 flex-wrap">
         {items.map((item) => (
           <FeatureBox
