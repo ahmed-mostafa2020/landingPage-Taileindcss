@@ -12,7 +12,7 @@
   }
 
   .btn {
-    @apply element-center bg-btnColor hover:bg-btnColorHover;
+    @apply element-center bg-secColor hover:bg-hoverColor;
   }
 }
 

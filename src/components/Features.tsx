@@ -32,7 +32,7 @@ const Features = () => {
   ]);
   return (
     <section>
-      <div className="container element-center gap-10 flex-wrap">
+      <div className="container element-center gap-y-10 flex-wrap">
         {items.map((item) => (
           <FeatureBox
             key={item.title}
