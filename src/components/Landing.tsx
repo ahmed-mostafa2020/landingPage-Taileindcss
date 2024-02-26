@@ -23,10 +23,7 @@ const Landing = () => {
           impedit commodi.
         </p>
 
-        <Link
-          className="btn w-[260px] h-[60px] font-semibold rounded-[30px] transition-all duration-300"
-          href="./register"
-        >
+        <Link className="btn w-[260px] h-[60px]" href="./register">
           Get Started
         </Link>
       </div>

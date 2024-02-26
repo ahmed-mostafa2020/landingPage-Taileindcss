@@ -12,7 +12,7 @@
   }
 
   .btn {
-    @apply element-center bg-secColor hover:bg-hoverColor;
+    @apply element-center bg-secColor hover:bg-hoverColor font-semibold rounded-[30px] transition-all duration-300;
   }
 
   .space {
