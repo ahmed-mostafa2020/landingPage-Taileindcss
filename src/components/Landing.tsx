@@ -3,9 +3,7 @@ import landing from "../../public/assets/images/landing-img.png";
 import curvey from "../../public/assets/images/bg-curvy-desktop.svg";
 import Link from "next/link";
 
-type Props = {};
-
-const Landing = (props: Props) => {
+const Landing = () => {
   return (
     <section className="bg-[#1c2230] pt-[160px]">
       <div className="container element-center flex-col gap-8 text-center text-mainColor">

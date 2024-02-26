@@ -6,9 +6,7 @@ import logo from "../../public/assets/images/logo.svg";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   const links: string[] = ["features", "teams", "signs"];
 
   const headerRef = useRef<HTMLDivElement>(null);
